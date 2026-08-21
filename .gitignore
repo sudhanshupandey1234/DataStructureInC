@@ -1,0 +1,8 @@
+# Compiled Executables & Object files
+*.exe
+*.o
+*.out
+
+# VS Code / Editor files
+.vscode/
+.DS_Store
