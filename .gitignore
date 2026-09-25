@@ -6,3 +6,5 @@
 # VS Code / Editor files
 .vscode/
 .DS_Store
+.rocketride/
+.env

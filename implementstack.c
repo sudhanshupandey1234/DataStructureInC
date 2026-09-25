@@ -33,7 +33,8 @@ int main(){
     }
     return 0;
 }
-push(){
+
+void push(){
     printf("Enter the element to be pushed: ");
     scanf("%d",&data);
     if (top == max) {
@@ -43,20 +44,21 @@ push(){
         stack[top] = data;
     }
 }
-pop(){
+
+void pop(){
     if (top == -1) {
         printf("Stack Underflow\n");
     } else {
-        data = stack[top];
+        printf("Popped element: %d\n", stack[top]);
         top--;
-        printf("Popped element: %d\n", data);
     }
 }
- trav(){
+
+void trav(){
     if (top == -1) {
         printf("Stack is empty\n");
     } else {
-        printf("Stack elements: ");
+        printf("Stack elements are: ");
         for (int i = top; i >= 0; i--) {
             printf("%d ", stack[i]);
         }
